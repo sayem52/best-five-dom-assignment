@@ -1,0 +1,44 @@
+body{
+    
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+  
+    
+
+}
+header{
+    background-color: black;
+    height: 400px;
+    color: white;
+    
+
+}
+
+#title{
+    color:rgba(255, 68, 0, 0.849);
+    padding-top: 120px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#cover-pic{
+    margin-top: 116px;
+    height: 75%;
+    width: 100%;
+}
+
+#logo-cover{
+    height: 50%;
+    width: 60%;
+
+
+}
+
+#foot-img{
+     height: 25%;
+    width: 35%;
+    margin-top: 130px;
+    margin-left: 190px;
+    
+    
+}
