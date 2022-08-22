@@ -25,6 +25,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Poppins:ital@1&family=Raleway:ital,wght@1,700&display=swap"
         rel="stylesheet">
+    
+        <script src="https://kit.fontawesome.com/c5cf99761f.js" crossorigin="anonymous"></script>
 
 
 </head>
@@ -72,11 +74,11 @@
                         <div class="card  ms-5 me-3 back-c">
                             <img src="images/Hakimi.jpg" class="card-img-top img-fit" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Hakimi</h5>
-                                <small class="card-text"> 3 Goals  12 Assist</small>
+                                <h5 class="card-title text-center" id="hakimi">Hakimi</h5>
+                                <small class="card-text text-center mx-2 f-type fw-light"> 3 Goals  <i class="fa-regular fa-square  mx-2"></i>  12 Assist</small>
 
-                               <div>
-                                <button type="button" class="btn btn-primary btn-sm">Select</button>
+                               <div class="c-btn">
+                                <button id="hak-sel" type="button" class="btn btn-primary btn-sm c-p">Select</button>
                                </div>
                             </div>
                         
@@ -84,11 +86,11 @@
                         <div class="card  me-3 back-c">
                         <img src="images/neymar jr.jpg" class="card-img-top img-fit" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Neymar jr</h5>
-                            <small class="card-text">50 Goals 150 Assist</small>
+                            <h5 class="card-title text-center" id="neymar">Neymar jr</h5>
+                            <small class="card-text mx-2 f-type fw-light">50 Goals  <i class="fa-regular fa-square mx-2"></i>  150 Assist</small>
 
-                            <div>
-                                <button type="button" class="btn btn-primary btn-sm">Select</button>
+                            <div class="c-btn">
+                                <button type="button" class="btn btn-primary btn-sm c-p" id="ney-sel">Select</button>
                             </div>
                         </div>
                         
@@ -96,11 +98,11 @@
                         <div class="card  me-3 back-c">
                             <img src="images/messi.jpg" class="card-img-top img-fit" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Lionel Messi</h5>
-                                <small class="card-text"> 36 Goals 90 Assist</small>
+                                <h5 class="card-title text-center" id="messi">Lionel Messi</h5>
+                                <small class="card-text mx-2 f-type fw-light">  36 Goals   <i class="fa-regular fa-square mx-2"></i>  90 Assist</small>
 
                                 <div class="c-btn">
-                                    <button type="button" class="btn btn-primary btn-sm">Select</button>
+                                    <button type="button" class="btn btn-primary btn-sm c-p" id="mes-sel">Select</button>
                                 </div>
                             </div>
                        
@@ -109,6 +111,10 @@
                         <div class="card  me-3 back-c">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Selected-Five</h5>
+                                <ol id="five-list">
+                                    
+                                    
+                                </ol>
                                 
                             </div>
                             
@@ -124,6 +130,151 @@
 
             </div>
         </div>
+
+
+
+        <div class="row  mx-5">
+            <div class="col-12 mt-5">
+                
+                    <div class="card-group w-90">
+                        <div class="card  ms-5 me-3 back-c">
+                            <img src="images/Icardi.jpg" class="card-img-top img-fit" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" id="icardi">Icardi</h5>
+                                <small class="card-text text-center mx-2 f-type fw-light"> 5 Goals  <i class="fa-regular fa-square  mx-2"></i>  5 Assist</small>
+
+                               <div class="c-btn">
+                                <button type="button" class="btn btn-primary btn-sm c-p"  id="ica-sel">Select</button>
+                               </div>
+                            </div>
+                        
+                        </div>
+                        <div class="card  me-3 back-c">
+                        <img src="images/Kimpembe.webp" class="card-img-top img-fit" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" id="kim">Kimpembe</h5>
+                            <small class="card-text mx-2 f-type fw-light">7 Goals  <i class="fa-regular fa-square mx-2"></i>  15 Assist</small>
+
+                            <div class="c-btn">
+                                <button type="button" class="btn btn-primary btn-sm c-p" id="kim-sel">Select</button>
+                            </div>
+                        </div>
+                        
+                        </div>
+                        <div class="card  me-3 back-c">
+                            <img src="images/marquinhos.webp" class="card-img-top img-fit" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" id="mar">Marquinhos</h5>
+                                <small class="card-text mx-2 f-type fw-light">  20 Goals   <i class="fa-regular fa-square mx-2"></i>  10 Assist</small>
+
+                                <div class="c-btn">
+                                    <button type="button" class="btn btn-primary btn-sm c-p" id="mar-sel">Select</button>
+                                </div>
+                            </div>
+                       
+                        </div>
+
+                        <div  class="card  me-3 back-c">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Budget</h5>
+
+                                <small>Per Player <input id="per-price" class="w-50 ms-3 input-b" type="text5"></small>
+
+                               <div>
+                                 <button type="button" id="calculate" class="btn btn-primary btn-sm c-p mt-2">Calculate</button>
+                               </div>
+
+                                <div class="mt-4">
+                                    <h6><small>Player Expenses </small> $<span>00</span></h5>
+                                    
+                                </div>
+
+                                <div class="input-box">
+                                    <small>Manager <input class="w-50 ms-1 input-b" type="text5"></small>
+                                </div>
+
+                                <div class="input-box mt-2">
+                                    <small>Coach<input class="w-50 ms-4 input-b" type="text5"></small>
+                                </div>
+                                <div>
+                                  <button type="button" class="btn btn-primary btn-sm  mt-2 ms-4">Calculate Total</button>
+                                </div>
+
+                                <div class="mt-4">
+                                    <h6 class="total"><small class="margin-total">Total </small> $<span>00</span></h6>
+                                    
+                                </div>
+
+
+
+
+
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+
+        
+
+            </div>
+        </div>
+
+
+        
+        <div class="row  mx-5">
+            <div class="col-9 mt-5">
+                
+                    <div class="card-group w-90">
+                        <div class="card  ms-5 me-4 back-c">
+                            <img src="images/navas-2.jpg" class="card-img-top img-fit" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" id="navas">Navas</h5>
+                                <small class="card-text text-center mx-2 f-type fw-light"> 1 Goal <i class="fa-regular fa-square  mx-2"></i>  0 Assist</small>
+
+                               <div class="c-btn">
+                                <button type="button" class="btn btn-primary btn-sm c-p" id="nav-sel">Select</button>
+                               </div>
+                            </div>
+                        
+                        </div>
+                        <div class="card  me-4 back-c">
+                        <img src="images/ramos.jpg" class="card-img-top img-fit" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" id="ser">Sergio Ramos</h5>
+                            <small class="card-text mx-2 f-type fw-light"> 9 Goals  <i class="fa-regular fa-square mx-2"></i>  8 Assist</small>
+
+                            <div class="c-btn">
+                                <button type="button" class="btn btn-primary btn-sm c-p" id="ser-sel">Select</button>
+                            </div>
+                        </div>
+                        
+                        </div>
+                        <div class="card   back-c">
+                            <img src="images/veratti.jpg" class="card-img-top img-fit" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" id="ver">Veratti</h5>
+                                <small class="card-text mx-2 f-type fw-light">  18 Goals   <i class="fa-regular fa-square mx-2"></i>  12 Assist</small>
+
+                                <div class="c-btn">
+                                    <button type="button" class="btn btn-primary btn-sm c-p" id="ver-sel">Select</button>
+                                </div>
+                            </div>
+                       
+                        </div>
+
+                        
+                    </div>
+
+        
+
+            </div>
+        </div>
+        
+
+           
+            
+       
 
     </section>
 
