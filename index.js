@@ -1,28 +1,29 @@
   
   const btn1=document.getElementById("hak-sel");
   btn1.addEventListener("click", function(){
-            
+
+   
         let addName=getName("hakimi");
         let fiveList=document.getElementById("five-list");
-        
         const li=document.createElement('li');
         li.innerText=addName;    
         fiveList.appendChild(li);
         disableButton("hak-sel");
-    
-        });
+
+    });
 
 const btn2=document.getElementById("ney-sel");
 btn2.addEventListener("click", function(){
-                 
-    let addName=getName("neymar");
-    let fiveList=document.getElementById("five-list");
-                
-    const li=document.createElement('li');
-    li.innerText=addName;    
-    fiveList.appendChild(li);
-    disableButton("ney-sel");
-         
+             
+        let addName=getName("neymar");
+        let fiveList=document.getElementById("five-list");
+                    
+        const li=document.createElement('li');
+        li.innerText=addName;    
+        fiveList.appendChild(li);
+        disableButton("ney-sel");
+
+   
      });
 
 const btn3=document.getElementById("mes-sel");
@@ -119,7 +120,6 @@ btn9.addEventListener("click", function(){
          
      });
 
-
 const cal=document.getElementById("calculate");
 cal.addEventListener("click", function(){
 
@@ -141,19 +141,25 @@ allTotal.addEventListener("click", function(){
 
     let priceMana=inputTOInt("manager-salary");
     let priceCoa=inputTOInt("coach-salary");
-   
-    let expenses= textTOInt("playerEx");
 
-    let total= priceMana + priceCoa + expenses ;
+    
+        let expenses= textTOInt("playerEx");
 
-    document.getElementById("total-end").innerText= total;
+        let total= priceMana + priceCoa + expenses ;
+    
+        document.getElementById("total-end").innerText= total;
+    
+    
+        document.getElementById("manager-salary").value="";
+    
+        document.getElementById("coach-salary").value="";
 
-
-    document.getElementById("manager-salary").value="";
-
-    document.getElementById("coach-salary").value="";
         
     });
+
+
+
+
 
 
 function getName(id){
