@@ -120,18 +120,40 @@ btn9.addEventListener("click", function(){
      });
 
 
-//      const btn2=document.getElementById("hak-sel");
-// hakBtn.addEventListener("click", function(){
-                 
-//     let addName=getName("hakimi");
-//     let fiveList=document.getElementById("five-list");
-                
-//     const li=document.createElement('li');
-//     li.innerText=addName;    
-//     fiveList.appendChild(li);
-//     disableButton("hak-sel");
+const cal=document.getElementById("calculate");
+cal.addEventListener("click", function(){
+
+    let pricePlayer=inputTOInt("per-price");
+    let totalExpenses = document.getElementById("playerEx");
+    
+    let calPlayer = pricePlayer * 5 ;
+    
+    totalExpenses.innerText= calPlayer;
+
+
+    document.getElementById("per-price").value="";
          
-//      });
+     });
+
+
+const allTotal=document.getElementById("all-total");
+allTotal.addEventListener("click", function(){
+
+    let priceMana=inputTOInt("manager-salary");
+    let priceCoa=inputTOInt("coach-salary");
+   
+    let expenses= textTOInt("playerEx");
+
+    let total= priceMana + priceCoa + expenses ;
+
+    document.getElementById("total-end").innerText= total;
+
+
+    document.getElementById("manager-salary").value="";
+
+    document.getElementById("coach-salary").value="";
+        
+    });
 
 
 function getName(id){
@@ -152,33 +174,24 @@ function disableButton(id){
 
 
 
-
-
-
-
-
-
-
-
-
-
 // Function for input convert to number
 function inputTOInt(id){
-    const wantAmount=document.getElementById(id).value;
-    const wantNumber=parseInt(wantAmount);
+    let perPrice=document.getElementById(id).value;
 
-    return wantNumber;
+  
+        const priceInt=parseInt(perPrice);
 
+        return priceInt;
+
+    
 }
 
 
 //  // Function total
-function getTotal(id,cNumber){
+function textTOInt(id){
     const Amount=document.getElementById(id).innerText;
-    const balanceNumber=parseFloat(Amount);
+    const balanceNumber=parseInt(Amount);
 
-    const totalBalance=cNumber + balanceNumber ;
-
-    document.getElementById(id).innerText=totalBalance;
+    return balanceNumber;
 
 }
