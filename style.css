@@ -28,7 +28,7 @@ header{
 }
 
 #logo-cover{
-    height: 50%;
+    height: 80%;
     width: 60%;
 
 
@@ -41,4 +41,18 @@ header{
     margin-left: 190px;
     
     
+}
+
+#second-section{
+    height: 500px;
+    background-color: rgb(27, 27, 27);
+}
+
+.img-fit{
+    height: 50%;
+}
+
+.back-c{
+    background-color: black;
+    color:white;
 }
