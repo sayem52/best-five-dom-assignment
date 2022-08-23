@@ -13,7 +13,7 @@
 
         }
         else{
-            alert("Already five selected");
+            alert("Already five selected"); //this is warning
         }
        
     
@@ -241,7 +241,7 @@ allTotal.addEventListener("click", function(){
 
 
 
-
+// function which is take name
 
 function getName(id){
     const getPlayerName=document.getElementById(id);
@@ -251,7 +251,7 @@ function getName(id){
 }
 
 
-
+// button disable 
 function disableButton(id){
     const disableB=document.getElementById(id);
 
@@ -274,7 +274,7 @@ function inputTOInt(id){
 }
 
 
-//  // Function total
+//  // text convert integer
 function textTOInt(id){
     const Amount=document.getElementById(id).innerText;
     const balanceNumber=parseInt(Amount);
