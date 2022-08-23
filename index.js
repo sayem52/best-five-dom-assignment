@@ -2,121 +2,198 @@
   const btn1=document.getElementById("hak-sel");
   btn1.addEventListener("click", function(){
 
-   
-        let addName=getName("hakimi");
-        let fiveList=document.getElementById("five-list");
-        const li=document.createElement('li');
-        li.innerText=addName;    
-        fiveList.appendChild(li);
-        disableButton("hak-sel");
+        const fruits = document.querySelectorAll('li');
+        if(fruits.length < 5){
+            let addName=getName("hakimi");
+            let fiveList=document.getElementById("five-list");
+            const li=document.createElement('li');
+            li.innerText=addName;    
+            fiveList.appendChild(li);
+            disableButton("hak-sel");
+
+        }
+        else{
+            alert("Already five selected");
+        }
+       
+    
 
     });
 
 const btn2=document.getElementById("ney-sel");
 btn2.addEventListener("click", function(){
-             
-        let addName=getName("neymar");
+      
+        const fruits = document.querySelectorAll('li');
+
+        if(fruits.length < 5){
+            let addName=getName("neymar");
         let fiveList=document.getElementById("five-list");
                     
         const li=document.createElement('li');
         li.innerText=addName;    
         fiveList.appendChild(li);
         disableButton("ney-sel");
+        }
+        else{
+            alert("Already five selected");
+        }
+    
 
    
      });
 
 const btn3=document.getElementById("mes-sel");
 btn3.addEventListener("click", function(){
-                
-    let addName3=getName("messi");
-    let fiveList=document.getElementById("five-list");
-                
-    const li=document.createElement('li');
-    li.innerText=addName3;    
-    fiveList.appendChild(li);
-    disableButton("mes-sel");
+
+    
+    const fruits = document.querySelectorAll('li');
+
+    if(fruits.length < 5){
+                     
+        let addName3=getName("messi");
+        let fiveList=document.getElementById("five-list");
+                    
+        const li=document.createElement('li');
+        li.innerText=addName3;    
+        fiveList.appendChild(li);
+        disableButton("mes-sel");
+        
+    }
+    else{
+        alert("Already five selected");
+    }
+
+   
         
     });
 
 const btn4=document.getElementById("ica-sel");
 btn4.addEventListener("click", function(){
+     const fruits = document.querySelectorAll('li');
+    if(fruits.length < 5){
+        let addName=getName("icardi");
+        let fiveList=document.getElementById("five-list");
+                    
+        const li=document.createElement('li');
+        li.innerText=addName;    
+        fiveList.appendChild(li);
+        disableButton("ica-sel");
+    }
+    else{
+        alert("Already five selected");
+    }
+
+   
+        
+    });
                  
-    let addName=getName("icardi");
-    let fiveList=document.getElementById("five-list");
-                
-    const li=document.createElement('li');
-    li.innerText=addName;    
-    fiveList.appendChild(li);
-    disableButton("ica-sel");
+   
          
-     });
+    
 
 const btn5=document.getElementById("kim-sel");
 btn5.addEventListener("click", function(){
+
+    const fruits = document.querySelectorAll('li');
+    if(fruits.length < 5){
+        let addName=getName("kim");
+        let fiveList=document.getElementById("five-list");
+                    
+        const li=document.createElement('li');
+        li.innerText=addName;    
+        fiveList.appendChild(li);
+        disableButton("kim-sel");
+             
+    }
+    else{
+        alert("Already five selected");
+    }
                  
-    let addName=getName("kim");
-    let fiveList=document.getElementById("five-list");
-                
-    const li=document.createElement('li');
-    li.innerText=addName;    
-    fiveList.appendChild(li);
-    disableButton("kim-sel");
-         
+    
      });
 
 
 const btn6=document.getElementById("mar-sel");
 btn6.addEventListener("click", function(){
+
+    const fruits = document.querySelectorAll('li');
+    if(fruits.length < 5){
+        let addName=getName("mar");
+        let fiveList=document.getElementById("five-list");
+                    
+        const li=document.createElement('li');
+        li.innerText=addName;    
+        fiveList.appendChild(li);
+        disableButton("mar-sel");
+    }
+    else{
+        alert("Already five selected");
+    }
                  
-    let addName=getName("mar");
-    let fiveList=document.getElementById("five-list");
-                
-    const li=document.createElement('li');
-    li.innerText=addName;    
-    fiveList.appendChild(li);
-    disableButton("mar-sel");
+    
          
      });
 
 
 const btn7=document.getElementById("nav-sel");
 btn7.addEventListener("click", function(){
+    const fruits = document.querySelectorAll('li');
+    if(fruits.length < 5){
+        let addName=getName("navas");
+        let fiveList=document.getElementById("five-list");
+                    
+        const li=document.createElement('li');
+        li.innerText=addName;    
+        fiveList.appendChild(li);
+        disableButton("nav-sel");
+    }
+    else{
+        alert("Already five selected");
+    }
                  
-    let addName=getName("navas");
-    let fiveList=document.getElementById("five-list");
-                
-    const li=document.createElement('li');
-    li.innerText=addName;    
-    fiveList.appendChild(li);
-    disableButton("nav-sel");
+    
          
      });
 
 const btn8=document.getElementById("ser-sel");
 btn8.addEventListener("click", function(){
+
+    const fruits = document.querySelectorAll('li');
+    if(fruits.length < 5){
+        let addName=getName("ser");
+        let fiveList=document.getElementById("five-list");
+                    
+        const li=document.createElement('li');
+        li.innerText=addName;    
+        fiveList.appendChild(li);
+        disableButton("ser-sel");
+    }
+    else{
+        alert("Already five selected");
+    }
                  
-    let addName=getName("ser");
-    let fiveList=document.getElementById("five-list");
-                
-    const li=document.createElement('li');
-    li.innerText=addName;    
-    fiveList.appendChild(li);
-    disableButton("ser-sel");
+    
          
      });
 
 
 const btn9=document.getElementById("ver-sel");
 btn9.addEventListener("click", function(){
+    const fruits = document.querySelectorAll('li');
+    if(fruits.length < 5){
+        let addName=getName("ver");
+        let fiveList=document.getElementById("five-list");
+                    
+        const li=document.createElement('li');
+        li.innerText=addName;    
+        fiveList.appendChild(li);
+        disableButton("ver-sel");
+    }
+    else{
+        alert("Already five selected");
+    }
                  
-    let addName=getName("ver");
-    let fiveList=document.getElementById("five-list");
-                
-    const li=document.createElement('li');
-    li.innerText=addName;    
-    fiveList.appendChild(li);
-    disableButton("ver-sel");
+    
          
      });
 
@@ -156,6 +233,10 @@ allTotal.addEventListener("click", function(){
 
         
     });
+
+    
+    
+    
 
 
 
